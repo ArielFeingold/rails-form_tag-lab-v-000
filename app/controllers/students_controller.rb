@@ -9,7 +9,8 @@ class StudentsController < ApplicationController
   end
 
   def create
-
+    byebug
+    @student = Student.new
   end
 
 end
