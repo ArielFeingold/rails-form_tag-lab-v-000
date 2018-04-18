@@ -10,7 +10,7 @@ class StudentsController < ApplicationController
 
   def create
     byebug
-    @student = Student.new
+    @student = Student.new(first_name: params[:first_name], last_name: params[:last_name])
   end
 
 end
